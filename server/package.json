@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
- "scripts": {
+"scripts": {
   "dev": "bun --watch src/index.ts",
-  "start": "bun src/index.ts"
+  "start": "bun run src/index.ts"
 },
   "dependencies": {
     "@clerk/nextjs": "^6.39.0",
