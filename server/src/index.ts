@@ -14,12 +14,13 @@ const app: Application = express();
 app.use(express.json());
 
 const allowedOrigins = [
+  "https://fooooddd-psi.vercel.app",
   "https://food-delivery-s682.onrender.com",
   "https://food-web-delivery.onrender.com",
   "https://food-web-delivery-client.vercel.app",
   "https://food-delivery-iota-five.vercel.app",
-  "http://localhost:3000",   
-  "http://localhost:8000"  
+  "http://localhost:3000",
+  "http://localhost:8000"
 ];
 
 app.use(cors({
