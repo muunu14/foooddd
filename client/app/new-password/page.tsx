@@ -10,7 +10,7 @@ function NewPasswordContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const API_URL = "https://food-ahv2.onrender.com/users/reset-password";
+  const API_URL = "https://foooddd.onrender.com//users/reset-password";
 
   const handleResetPassword = async () => {
     const email = searchParams.get('email');

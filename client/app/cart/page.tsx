@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { IoCloseOutline } from "react-icons/io5";
 import toast from 'react-hot-toast';
 import RobotDance from '../components/Robot';
+import FoodDance from '../components/Robot';
 
 export default function CartPage() {
   const { cart, removeFromCart, updateQuantity, clearCart } = useCart();
@@ -155,7 +156,7 @@ const fetchOrders = async () => {
                   onChange={(e) => setAddress(e.target.value)}
                   placeholder="Hurguuleh haygaa bichne uu"
                   className="w-full p-4 bg-gray-50 dark:bg-zinc-800 border dark:border-zinc-700 rounded-2xl text-sm h-24 focus:ring-2 focus:ring-red-500 outline-none dark:text-white"
-                /><RobotDance/>
+                /><FoodDance/>
               </div>
             </div>
 

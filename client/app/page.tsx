@@ -9,7 +9,6 @@ export default function SignUpStep1() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-
     try {
    const response = await fetch(
   'https://foooddd.onrender.com/users/sign-up',
@@ -19,7 +18,6 @@ export default function SignUpStep1() {
     body: JSON.stringify({ email }),
   }
 );
-
       const data = await response.json();
 
       if (response.ok) {
@@ -35,7 +33,7 @@ export default function SignUpStep1() {
     }
   };
 
-  if (loading) return <div className="p-10 text-center">Server asaj baina tur huleene uu
+  if (loading) return <div className="p-10 text-center">Түр хүлээнэ үү...
   <div className='flex justify-center items-center'>
     <RobotDance/> 
   </div>
