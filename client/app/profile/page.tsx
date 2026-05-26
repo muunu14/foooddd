@@ -10,7 +10,7 @@ export default function ProfilePage() {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
-  const API_URL = "https://food-ahv2.onrender.com/users";
+  const API_URL = "https://foooddd.onrender.com/users";
 
   const handlePasswordResetRequest = async () => {
     if (isLoading) return;

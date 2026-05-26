@@ -18,7 +18,7 @@ const handleFinish = async (e: React.FormEvent) => {
 
   setLoading(true);
   try {
-    const res = await fetch('https://food-ahv2.onrender.com/users/last-sign-up', {
+    const res = await fetch('https://foooddd.onrender.com/users/last-sign-up', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ token, password }),

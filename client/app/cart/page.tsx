@@ -14,9 +14,8 @@ export default function CartPage() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  // const API_URL = "http://localhost:8000";
 
-const API_URL = "https://food-ahv2.onrender.com";
+const API_URL = "https://foooddd.onrender.com";
 
 const handleCheckout = async () => {
   if (!address) {

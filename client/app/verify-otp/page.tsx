@@ -10,7 +10,7 @@ function VerifyOtpContent() {
   const searchParams = useSearchParams();
   const email = searchParams.get('email');
 
-  const API_URL = "https://food-ahv2.onrender.com/users/verify-otp";
+  const API_URL = "https://foooddd.onrender.com/users/verify-otp";
 
   const handleVerifyOtp = async () => {
     if (!otp || otp.length < 4) {

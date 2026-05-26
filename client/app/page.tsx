@@ -2,8 +2,6 @@
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import RobotDance from './components/Robot';
-// import AnimatedToaster from './components/AnimatedToaster';
-
 export default function SignUpStep1() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
@@ -13,11 +11,14 @@ export default function SignUpStep1() {
     setLoading(true);
 
     try {
-      const response = await fetch('https://food-ahv2.onrender.com/users/sign-up', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
+   const response = await fetch(
+  'https://foooddd.onrender.com/users/sign-up',
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email }),
+  }
+);
 
       const data = await response.json();
 
@@ -43,7 +44,6 @@ export default function SignUpStep1() {
   return (
     <div className="flex flex-col items-center justify-center max-h-screen bg-gray-100">
       <form onSubmit={handleSubmit} className="p-10 bg-white shadow-2xl rounded-4xl w-196 h-190 border border-gray-100">
-        {/* <AnimatedToaster/> */}
         <h1 className="text-2xl text-black dark:text-white mb-6 text-center">Sign-up</h1>
         <input 
           type="email" 
