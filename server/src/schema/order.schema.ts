@@ -28,5 +28,4 @@ export const OrderSchema = new Schema({
         default: "Pending" 
     },
 }, { timestamps: true });
-// export const OrderModel:Model<IOrder> = models["Order"] || mongoose.model("Order", OrderSchema);
 export const OrderModel = (models.Order as Model<IOrder>) || mongoose.model<IOrder>("Order", OrderSchema);
